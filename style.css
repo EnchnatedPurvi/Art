@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+html {
+  font-family: 'Playfair Display';
+}
+
+body {
+ margin: 0;
+}
+
+/* Set up navigation bar */
+nav {
+  background-color:thistle;
+padding: 1em;
+}
+
+nav a {
+ color:lightcoral;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+nav a:hover {
+  color:lightskyblue;
+  font-style: italic;
+}
+
+header, main {
+  background-color:lavenderblush;
+  padding: 1em;
+}
+
+
+h1, h2, p, ul {
+  margin: 0;
+}
+/** Make sections look nice **/
+main section {
+ background-color: paleturquoise;
+ border: 1px solid hotpink;
+border-radius: 10px;
+margin: 1em 0; /** seperate the sections**/
+  padding: 1em 2em; /** add spacing between words and border**/
+}
+/* For image slider */
+.arrow { /* Class strts with . */
+  border: solid black;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 20px;
+}
+
+.left {
+ transform: rotate(135deg);
+}
+.right {
+ transform: rotate(-45deg);
+}
+
+#image-slider {
+  align-items: center;
+  display: flex;
+}
+
+/* Change facts to bubbles */
+#facts {
+  display:flex;
+  list-style-type: none;
+ padding: 0;
+gap: 0.5em;
+}
+
+#facts li{
+ background-color:lightpink;
+border: 1px solid cadetblue;
+border-radius: 15px;
+padding: 0.5em;
+gap:0.5em;
+}
+
+#facts li:nth-child(2n) {
+ background-color:violet;
+}
